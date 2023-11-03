@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Домашняя работа номер 7</string>
+    <string name="sunday">Воскресенье, 19 май 2019 | 9:30Вечер</string>
+    <string name="mumbai">Мумбай, Индия</string>
+    <string name="cloudy">Облачно</string>
+    <string name="degrees">29</string>
+    <string name="warm_cold">°C</string>
+    <string name="heat_degree">35°C</string>
+    <string name="up_arrow">↑</string>
+    <string name="degree_cold">27°C</string>
+    <string name="stick_down">↓</string>
+    <string name="seventy_three_percent">73%</string>
+    <string name="humidity">Влажность</string>
+    <string name="mbar">1,009мБар</string>
+    <string name="pressure">Давления</string>
+    <string name="eleven_km_h">11 км/ч</string>
+    <string name="wind">Ветер</string>
+    <string name="watch_6_03_am">6:03 Утро</string>
+    <string name="sunrise">Восход</string>
+    <string name="watch_7_05_pm">7:05 Вечер</string>
+    <string name="sunset">Закат</string>
+    <string name="daytime_13h_1m">13ч 1м</string>
+    <string name="daytime">Дневное время</string>
+    <string name="mon">Понедельник, 21</string>
+    <string name="degree_26_c">26°C</string>
+    <string name="tue">Вторник, 22</string>
+    <string name="numder_34_c">34°C</string>
+    <string name="number_29_c">29°C</string>
+    <string name="wed">Среда, 22</string>
+</resources>

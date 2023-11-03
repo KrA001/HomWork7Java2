@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">HomWork1</string>
+    <string name="app_name">HomWork7</string>
+    <string name="sunday">Sunday, 19 May 2019 | 9:30PM</string>
+    <string name="mumbai">Mumbai, India</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="degrees">29</string>
+    <string name="warm_cold">°C</string>
+    <string name="heat_degree">35°C</string>
+    <string name="up_arrow">↑</string>
+    <string name="degree_cold">27°C</string>
+    <string name="stick_down">↓</string>
+    <string name="seventy_three_percent">73%</string>
+    <string name="humidity">Humidity</string>
+    <string name="mbar">1,009mBar</string>
+    <string name="pressure">Pressure</string>
+    <string name="eleven_km_h">11 km/h</string>
+    <string name="wind">Wind</string>
+    <string name="watch_6_03_am">6:03 AM</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="watch_7_05_pm">7:05 PM</string>
+    <string name="sunset">Sunset</string>
+    <string name="daytime_13h_1m">13h 1m</string>
+    <string name="daytime">Daytime</string>
+    <string name="mon">Mon, 21</string>
+    <string name="degree_26_c">26°C</string>
+    <string name="tue">Tue, 22</string>
+    <string name="numder_34_c">34°C</string>
+    <string name="number_29_c">29°C</string>
+    <string name="wed">Wed, 22</string>
 </resources>

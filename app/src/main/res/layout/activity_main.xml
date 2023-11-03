@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="22dp"
                 android:layout_marginTop="18dp"
-                android:text="Sunday, 19 May 2019 | 9:30PM"
+                android:text="@string/sunday"
                 app:layout_constraintEnd_toStartOf="@id/btn_some"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/raunder_for_button"
                 android:drawableEnd="@drawable/location"
-                android:text="Mumbai, India"
+                android:text="@string/mumbai"
                 android:textColor="@color/blue_"
                 app:backgroundTint="@color/lightBlue"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -65,12 +65,10 @@
 
             <TextView
                 android:id="@+id/Cloudy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Small"
                 android:layout_marginStart="34dp"
-                android:text="Cloudy"
+                android:text="@string/cloudy"
                 android:textColor="@color/black"
-                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/IV_clouds" />
 
@@ -79,69 +77,59 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="29"
-                android:textSize="60dp"
+                android:text="@string/degrees"
+                android:textSize="60sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_info" />
 
             <TextView
                 android:id="@+id/tv_temp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Large"
                 android:layout_marginStart="2dp"
                 android:layout_marginTop="60dp"
-                android:text="°C"
+                android:text="@string/warm_cold"
                 android:textColor="@color/grey"
-                android:textSize="20sp"
                 app:layout_constraintBaseline_toTopOf="parent"
                 app:layout_constraintStart_toEndOf="@id/tv_number"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tv_temp2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Large"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="20dp"
-                android:text="35°C"
+                android:text="@string/heat_degree"
                 android:textColor="@color/grey"
-                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/tv_number"
                 app:layout_constraintTop_toBottomOf="@+id/btn_some" />
 
             <TextView
                 android:id="@+id/tv_temp3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Large"
                 android:layout_marginTop="16dp"
-                android:text="↑"
+                android:text="@string/up_arrow"
                 android:textColor="@color/grey"
-                android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@id/tv_temp2"
                 app:layout_constraintTop_toBottomOf="@id/btn_some" />
 
             <TextView
                 android:id="@+id/tv_temp4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+               style="@style/Text.Large"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="5dp"
-                android:text="27°C"
+                android:text="@string/degree_cold"
                 android:textColor="@color/grey"
-                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/tv_number"
                 app:layout_constraintTop_toBottomOf="@id/tv_temp2" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Large"
                 android:layout_marginTop="5dp"
-                android:text="↓"
+                android:text="@string/stick_down"
                 android:textColor="@color/grey"
-                android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@id/tv_temp4"
                 app:layout_constraintTop_toBottomOf="@id/tv_temp3" />
 
@@ -157,12 +145,10 @@
 
             <TextView
                 android:id="@+id/tv_number2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.arrow"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="14dp"
-                android:text="73%"
-                android:textSize="24sp"
+                android:text="@string/seventy_three_percent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_capli" />
 
@@ -171,7 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="34dp"
-                android:text="Humidity"
+                android:text="@string/humidity"
                 android:textColor="@color/grey"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_number2" />
@@ -188,11 +174,9 @@
 
             <TextView
                 android:id="@+id/tv_num"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Large"
                 android:layout_marginTop="14dp"
-                android:text="1,009mBar"
-                android:textSize="20sp"
+                android:text="@string/mbar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_speek" />
@@ -201,7 +185,7 @@
                 android:id="@+id/tv_pres"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pressure"
+                android:text="@string/pressure"
                 android:textColor="@color/grey"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -219,12 +203,10 @@
 
             <TextView
                 android:id="@+id/tv_num2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+               style="@style/Text.Large"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="30dp"
-                android:text="11 km/h"
-                android:textSize="20sp"
+                android:text="@string/eleven_km_h"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_vozduh" />
 
@@ -233,7 +215,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="50dp"
-                android:text="Wind"
+                android:text="@string/wind"
                 android:textColor="@color/grey"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_num2" />
@@ -250,13 +232,11 @@
 
             <TextView
                 android:id="@+id/tv_six"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Large"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="12dp"
-                android:text="6:03 AM"
+                android:text="@string/watch_6_03_am"
                 android:textColor="@color/black"
-                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/IV_suni" />
 
@@ -265,7 +245,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="38dp"
-                android:text="Sunrise"
+                android:text="@string/sunrise"
                 android:textColor="@color/grey"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_six" />
@@ -282,12 +262,10 @@
 
             <TextView
                 android:id="@+id/tv_pm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+               style="@style/Text.Large"
                 android:layout_marginStart="70dp"
                 android:layout_marginTop="12dp"
-                android:text="7:05 PM"
-                android:textSize="20sp"
+                android:text="@string/watch_7_05_pm"
                 app:layout_constraintStart_toEndOf="@+id/tv_six"
                 app:layout_constraintTop_toBottomOf="@+id/iv_cun" />
 
@@ -296,7 +274,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="100dp"
-                android:text="Sunset"
+                android:text="@string/sunset"
                 app:layout_constraintStart_toEndOf="@+id/tv_sunr"
                 app:layout_constraintTop_toBottomOf="@+id/tv_pm" />
 
@@ -312,12 +290,10 @@
 
             <TextView
                 android:id="@+id/tv_chas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Large"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="36dp"
-                android:text="13h 1m"
-                android:textSize="20sp"
+                android:text="@string/daytime_13h_1m"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_watch" />
 
@@ -326,7 +302,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="42dp"
-                android:text="Daytime"
+                android:text="@string/daytime"
                 android:textColor="@color/grey"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_chas" />
@@ -343,12 +319,10 @@
 
             <TextView
                 android:id="@+id/tv_mon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Large"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="12dp"
-                android:text="Mon, 21"
-                android:textSize="20sp"
+                android:text="@string/mon"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/iv_cum" />
 
@@ -358,19 +332,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="6dp"
-                android:text="35°C"
+                android:text="@string/heat_degree"
                 android:textColor="@color/grey"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_mon" />
 
             <TextView
                 android:id="@+id/tv_top"
-                android:layout_width="11dp"
-                android:layout_height="19dp"
+                style="@style/Text.Small"
                 android:layout_marginTop="4dp"
-                android:text="↑"
+                android:text="@string/up_arrow"
                 android:textColor="@color/grey"
-                android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@id/cocn"
                 app:layout_constraintTop_toBottomOf="@+id/tv_mon" />
 
@@ -380,18 +352,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="6dp"
-                android:text="26°C"
+                android:text="@string/degree_26_c"
                 android:textColor="@color/grey"
                 app:layout_constraintStart_toEndOf="@+id/tv_top"
                 app:layout_constraintTop_toBottomOf="@+id/tv_mon" />
 
             <TextView
                 android:id="@+id/tv_sit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Small"
                 android:layout_marginTop="4dp"
-                android:text="↓"
-                android:textSize="16sp"
+                android:text="@string/stick_down"
                 app:layout_constraintStart_toEndOf="@+id/tv_twentsix"
                 app:layout_constraintTop_toBottomOf="@+id/tv_mon" />
 
@@ -407,12 +377,10 @@
 
             <TextView
                 android:id="@+id/tv_tue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+               style="@style/Text.Large"
                 android:layout_marginStart="74dp"
                 android:layout_marginTop="14dp"
-                android:text="Tue, 22"
-                android:textSize="20sp"
+                android:text="@string/tue"
                 app:layout_constraintStart_toEndOf="@+id/tv_mon"
                 app:layout_constraintTop_toBottomOf="@+id/iv_oblaka" />
 
@@ -422,18 +390,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="62dp"
                 android:layout_marginTop="6dp"
-                android:text="35°C"
+                android:text="@string/heat_degree"
                 android:textColor="@color/grey"
                 app:layout_constraintStart_toEndOf="@+id/tv_sit"
                 app:layout_constraintTop_toBottomOf="@+id/tv_tue" />
 
             <TextView
                 android:id="@+id/tv_two"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Small"
                 android:layout_marginTop="4dp"
-                android:text="↑"
-                android:textSize="16sp"
+                android:text="@string/up_arrow"
                 app:layout_constraintStart_toEndOf="@+id/tv_five"
                 app:layout_constraintTop_toBottomOf="@+id/tv_tue" />
 
@@ -443,18 +409,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="6dp"
-                android:text="27°C"
+                android:text="@string/degree_cold"
                 android:textColor="@color/grey"
                 app:layout_constraintStart_toEndOf="@+id/tv_two"
                 app:layout_constraintTop_toBottomOf="@+id/tv_tue" />
 
             <TextView
                 android:id="@+id/tv_cit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Small"
                 android:layout_marginTop="4dp"
-                android:text="↓"
-                android:textSize="16sp"
+                android:text="@string/stick_down"
                 app:layout_constraintStart_toEndOf="@+id/tv_seven"
                 app:layout_constraintTop_toBottomOf="@+id/tv_tue" />
 
@@ -470,12 +434,10 @@
 
             <TextView
                 android:id="@+id/tv_wed"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Large"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="36dp"
-                android:text="Wed, 22"
-                android:textSize="20sp"
+                android:text="@string/wed"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_wave" />
 
@@ -485,18 +447,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="48dp"
                 android:layout_marginTop="6dp"
-                android:text="34°C"
+                android:text="@string/numder_34_c"
                 android:textColor="@color/grey"
                 app:layout_constraintStart_toEndOf="@+id/tv_cit"
                 app:layout_constraintTop_toBottomOf="@+id/tv_wed" />
 
             <TextView
                 android:id="@+id/tv_four2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Small"
                 android:layout_marginTop="4dp"
-                android:text="↑"
-                android:textSize="16sp"
+                android:text="@string/up_arrow"
                 app:layout_constraintStart_toEndOf="@+id/tv_four"
                 app:layout_constraintTop_toBottomOf="@+id/tv_wed" />
 
@@ -506,18 +466,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="6dp"
-                android:text="29°C"
+                android:text="@string/number_29_c"
                 android:textColor="@color/grey"
                 app:layout_constraintStart_toEndOf="@+id/tv_four2"
                 app:layout_constraintTop_toBottomOf="@+id/tv_wed" />
 
             <TextView
                 android:id="@+id/tv_four3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Text.Small"
                 android:layout_marginTop="4dp"
-                android:text="↓"
-                android:textSize="16sp"
+                android:text="@string/stick_down"
                 app:layout_constraintStart_toEndOf="@+id/tv_nine"
                 app:layout_constraintTop_toBottomOf="@+id/tv_wed" />
 
