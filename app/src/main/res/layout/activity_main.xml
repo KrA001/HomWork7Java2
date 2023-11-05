@@ -31,11 +31,11 @@
 
             <TextView
                 android:id="@+id/tv_info"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text"
                 android:layout_marginStart="22dp"
                 android:layout_marginTop="18dp"
                 android:text="@string/sunday"
+                android:textColor="@color/grey"
                 app:layout_constraintEnd_toStartOf="@id/btn_some"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -53,9 +53,8 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/IV_clouds"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/iv_clouds"
+                style="@style/Base.Text"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="20dp"
                 android:scaleType="fitXY"
@@ -65,17 +64,16 @@
 
             <TextView
                 android:id="@+id/Cloudy"
-                style="@style/Text.Small"
+                style="@style/Base.Text.Small"
                 android:layout_marginStart="34dp"
                 android:text="@string/cloudy"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/IV_clouds" />
+                app:layout_constraintTop_toBottomOf="@id/iv_clouds" />
 
             <TextView
                 android:id="@+id/tv_number"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text"
                 android:layout_marginTop="2dp"
                 android:text="@string/degrees"
                 android:textSize="60sp"
@@ -85,7 +83,7 @@
 
             <TextView
                 android:id="@+id/tv_temp"
-                style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginStart="2dp"
                 android:layout_marginTop="60dp"
                 android:text="@string/warm_cold"
@@ -96,7 +94,7 @@
 
             <TextView
                 android:id="@+id/tv_temp2"
-                style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="20dp"
                 android:text="@string/heat_degree"
@@ -107,7 +105,7 @@
 
             <TextView
                 android:id="@+id/tv_temp3"
-                style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginTop="16dp"
                 android:text="@string/up_arrow"
                 android:textColor="@color/grey"
@@ -116,7 +114,7 @@
 
             <TextView
                 android:id="@+id/tv_temp4"
-               style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="5dp"
                 android:text="@string/degree_cold"
@@ -126,7 +124,7 @@
                 app:layout_constraintTop_toBottomOf="@id/tv_temp2" />
 
             <TextView
-                style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginTop="5dp"
                 android:text="@string/stick_down"
                 android:textColor="@color/grey"
@@ -135,8 +133,7 @@
 
             <ImageView
                 android:id="@+id/iv_capli"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                style="@style/Image"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="40dp"
                 android:src="@drawable/kaplya"
@@ -145,7 +142,7 @@
 
             <TextView
                 android:id="@+id/tv_number2"
-                style="@style/Text.arrow"
+                style="@style/Base.Text.Large"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="14dp"
                 android:text="@string/seventy_three_percent"
@@ -154,19 +151,16 @@
 
             <TextView
                 android:id="@+id/tv_humi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="34dp"
+                style="@style/Base.Text.ShortText"
+                android:layout_marginStart="32dp"
                 android:text="@string/humidity"
-                android:textColor="@color/grey"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_number2" />
 
             <ImageView
                 android:id="@+id/iv_speek"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:layout_marginTop="40dp"
+                style="@style/Image"
+                android:layout_marginTop="42dp"
                 android:src="@drawable/speed"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -174,7 +168,7 @@
 
             <TextView
                 android:id="@+id/tv_num"
-                style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginTop="14dp"
                 android:text="@string/mbar"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -183,27 +177,24 @@
 
             <TextView
                 android:id="@+id/tv_pres"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text.ShortText"
                 android:text="@string/pressure"
-                android:textColor="@color/grey"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_num" />
 
             <ImageView
                 android:id="@+id/iv_vozduh"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
+                style="@style/Image"
                 android:layout_marginStart="100dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="34dp"
                 android:src="@drawable/air"
                 app:layout_constraintStart_toEndOf="@id/iv_speek"
                 app:layout_constraintTop_toBottomOf="@id/tv_temp4" />
 
             <TextView
                 android:id="@+id/tv_num2"
-               style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="30dp"
                 android:text="@string/eleven_km_h"
@@ -212,18 +203,15 @@
 
             <TextView
                 android:id="@+id/tv_wind"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text.ShortText"
                 android:layout_marginEnd="50dp"
                 android:text="@string/wind"
-                android:textColor="@color/grey"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_num2" />
 
             <ImageView
-                android:id="@+id/IV_suni"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
+                android:id="@+id/iv_suni"
+                style="@style/Image"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="24dp"
                 android:src="@drawable/suni"
@@ -232,28 +220,25 @@
 
             <TextView
                 android:id="@+id/tv_six"
-                style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="12dp"
                 android:text="@string/watch_6_03_am"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/IV_suni" />
+                app:layout_constraintTop_toBottomOf="@+id/iv_suni" />
 
             <TextView
                 android:id="@+id/tv_sunr"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text.ShortText"
                 android:layout_marginStart="38dp"
                 android:text="@string/sunrise"
-                android:textColor="@color/grey"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_six" />
 
             <ImageView
                 android:id="@+id/iv_cun"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
+                style="@style/Image"
                 android:layout_marginTop="24dp"
                 android:src="@drawable/cun"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -262,7 +247,7 @@
 
             <TextView
                 android:id="@+id/tv_pm"
-               style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginStart="70dp"
                 android:layout_marginTop="12dp"
                 android:text="@string/watch_7_05_pm"
@@ -271,8 +256,7 @@
 
             <TextView
                 android:id="@+id/tv_sunset"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text.ShortText"
                 android:layout_marginStart="100dp"
                 android:text="@string/sunset"
                 app:layout_constraintStart_toEndOf="@+id/tv_sunr"
@@ -280,8 +264,7 @@
 
             <ImageView
                 android:id="@+id/iv_watch"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
+                style="@style/Image"
                 android:layout_marginTop="22sp"
                 android:layout_marginEnd="44dp"
                 android:src="@drawable/watch"
@@ -290,7 +273,7 @@
 
             <TextView
                 android:id="@+id/tv_chas"
-                style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="36dp"
                 android:text="@string/daytime_13h_1m"
@@ -299,18 +282,15 @@
 
             <TextView
                 android:id="@+id/tv_day"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text.ShortText"
                 android:layout_marginEnd="42dp"
                 android:text="@string/daytime"
-                android:textColor="@color/grey"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_chas" />
 
             <ImageView
                 android:id="@+id/iv_cum"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
+                style="@style/Image"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="24dp"
                 android:src="@drawable/cum"
@@ -319,7 +299,7 @@
 
             <TextView
                 android:id="@+id/tv_mon"
-                style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="12dp"
                 android:text="@string/mon"
@@ -328,18 +308,16 @@
 
             <TextView
                 android:id="@+id/cocn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text.ShortText"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="6dp"
                 android:text="@string/heat_degree"
-                android:textColor="@color/grey"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_mon" />
 
             <TextView
                 android:id="@+id/tv_top"
-                style="@style/Text.Small"
+                style="@style/Base.Text.Small"
                 android:layout_marginTop="4dp"
                 android:text="@string/up_arrow"
                 android:textColor="@color/grey"
@@ -348,18 +326,16 @@
 
             <TextView
                 android:id="@+id/tv_twentsix"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text.ShortText"
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="6dp"
                 android:text="@string/degree_26_c"
-                android:textColor="@color/grey"
                 app:layout_constraintStart_toEndOf="@+id/tv_top"
                 app:layout_constraintTop_toBottomOf="@+id/tv_mon" />
 
             <TextView
                 android:id="@+id/tv_sit"
-                style="@style/Text.Small"
+                style="@style/Base.Text.Small"
                 android:layout_marginTop="4dp"
                 android:text="@string/stick_down"
                 app:layout_constraintStart_toEndOf="@+id/tv_twentsix"
@@ -367,8 +343,7 @@
 
             <ImageView
                 android:id="@+id/iv_oblaka"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
+                style="@style/Image"
                 android:layout_marginTop="24dp"
                 android:src="@drawable/oblaka"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -377,7 +352,7 @@
 
             <TextView
                 android:id="@+id/tv_tue"
-               style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginStart="74dp"
                 android:layout_marginTop="14dp"
                 android:text="@string/tue"
@@ -386,18 +361,16 @@
 
             <TextView
                 android:id="@+id/tv_five"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text.ShortText"
                 android:layout_marginStart="62dp"
                 android:layout_marginTop="6dp"
                 android:text="@string/heat_degree"
-                android:textColor="@color/grey"
                 app:layout_constraintStart_toEndOf="@+id/tv_sit"
                 app:layout_constraintTop_toBottomOf="@+id/tv_tue" />
 
             <TextView
                 android:id="@+id/tv_two"
-                style="@style/Text.Small"
+                style="@style/Base.Text.Small"
                 android:layout_marginTop="4dp"
                 android:text="@string/up_arrow"
                 app:layout_constraintStart_toEndOf="@+id/tv_five"
@@ -405,18 +378,18 @@
 
             <TextView
                 android:id="@+id/tv_seven"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text.ShortText"
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="6dp"
                 android:text="@string/degree_cold"
-                android:textColor="@color/grey"
                 app:layout_constraintStart_toEndOf="@+id/tv_two"
                 app:layout_constraintTop_toBottomOf="@+id/tv_tue" />
 
             <TextView
                 android:id="@+id/tv_cit"
-                style="@style/Text.Small"
+                style="@style/Base.Text.Small"
+                android:layout_width="12dp"
+                android:layout_height="22dp"
                 android:layout_marginTop="4dp"
                 android:text="@string/stick_down"
                 app:layout_constraintStart_toEndOf="@+id/tv_seven"
@@ -424,8 +397,7 @@
 
             <ImageView
                 android:id="@+id/iv_wave"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
+                style="@style/Image"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="44dp"
                 android:src="@drawable/wave"
@@ -434,7 +406,7 @@
 
             <TextView
                 android:id="@+id/tv_wed"
-                style="@style/Text.Large"
+                style="@style/Base.Text.Large"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="36dp"
                 android:text="@string/wed"
@@ -443,18 +415,16 @@
 
             <TextView
                 android:id="@+id/tv_four"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text.ShortText"
                 android:layout_marginStart="48dp"
                 android:layout_marginTop="6dp"
                 android:text="@string/numder_34_c"
-                android:textColor="@color/grey"
                 app:layout_constraintStart_toEndOf="@+id/tv_cit"
                 app:layout_constraintTop_toBottomOf="@+id/tv_wed" />
 
             <TextView
                 android:id="@+id/tv_four2"
-                style="@style/Text.Small"
+                style="@style/Base.Text.Small"
                 android:layout_marginTop="4dp"
                 android:text="@string/up_arrow"
                 app:layout_constraintStart_toEndOf="@+id/tv_four"
@@ -462,18 +432,16 @@
 
             <TextView
                 android:id="@+id/tv_nine"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/Base.Text.ShortText"
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="6dp"
                 android:text="@string/number_29_c"
-                android:textColor="@color/grey"
                 app:layout_constraintStart_toEndOf="@+id/tv_four2"
                 app:layout_constraintTop_toBottomOf="@+id/tv_wed" />
 
             <TextView
                 android:id="@+id/tv_four3"
-                style="@style/Text.Small"
+                style="@style/Base.Text.Small"
                 android:layout_marginTop="4dp"
                 android:text="@string/stick_down"
                 app:layout_constraintStart_toEndOf="@+id/tv_nine"
